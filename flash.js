@@ -29,3 +29,50 @@ function showQuestion(i) {
         questionCard[i].style.display = 'block' 
 }
 
+function createForm(q, a) {
+    
+
+    console.log('Wrecked?');
+
+    let amountOfCard = document.getElementsByClassName('card').length
+    console.log(amountOfCard);
+    
+    let newCard = document.createElement('div')
+    console.log('werkt het?')
+    newCard.className = "card"
+    console.log('nog steeds?')
+    //newCard.onmousemove = showAnswer(amountOfCard++)
+    //newCard.onmouseout = showQuestion(amountOfCard++)
+    newCard.addEventListener('onmousemove', showAnswer(amountOfCard + 1))
+
+    console.log('halloooooo')
+
+
+    let newQuestion = document.createElement('p')
+    newQuestion.className = "question"
+    newCard.appendChild(newQuestion)
+    newQuestion.innerText = q
+    console.log('ja?')
+
+    let newAnswer = document.createElement('p')
+    newAnswer.className = "answer"
+    newCard.appendChild(newAnswer)
+    newAnswer.innerText = a
+    console.log('echt?')
+
+    return newCard
+    
+}
+
+function submitForm(event) {
+    event.preventDefault()
+    const newQuestionInput = document.getElementById("questionAdd").value
+    const newAnswerInput = document.getElementById("answerAdd").value
+
+    const newCard = createForm(newQuestionInput, newAnswerInput)
+    document.getElementById('cardContainer').appendChild(newCard)
+    console.log('en nu dan?')
+}
+
+
+
