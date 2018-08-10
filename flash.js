@@ -41,9 +41,10 @@ function createForm(q, a) {
     console.log('werkt het?')
     newCard.className = "card"
     console.log('nog steeds?')
-    //newCard.onmousemove = showAnswer(amountOfCard++)
-    //newCard.onmouseout = showQuestion(amountOfCard++)
-    newCard.addEventListener('onmousemove', showAnswer(amountOfCard + 1))
+    newCard.onmousemove = showAnswer(amountOfCard + 1)
+    newCard.onmouseout = showQuestion(amountOfCard + 1)
+    //newCard.addEventListener('onmousemove', showAnswer(amountOfCard++))
+    //newCard.addEventListener('onmouseout', showQuestion(amountOfCard++))
 
     console.log('halloooooo')
 
