@@ -1,0 +1,62 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url(https://www.publicdomainpictures.net/pictures/170000/velka/classic-cubes-background-8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+	font-family: 'Montserrat', sans-serif
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 1px;
+}
+.card-1 {
+  background-color: white;
+	width: 50%;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	/*display: none;*/
+}
+
+.question, .answer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.question {
+	display: block;
+}
+
+.answer {
+	display: none;
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+}
+
+button {
+  margin: 50px auto;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
