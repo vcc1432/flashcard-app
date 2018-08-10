@@ -13,14 +13,26 @@
 <h1>Welcome to the Flashcard app!</h1>
 
 <h2>Are you ready to practice your knowledge on JavaScript?</h2>
-<button>Hit me!</button>
-    <div class="card-1">
-        <div class="question">
-            <p>Question</p>
-        </div>
-        <div class="answer">
-            <p>Answer</p>
-        </div>
+<button onclick='showCard()'>Hit me!</button>
+    <div class="card" onmousemove='showAnswer(0)' onmouseout='showQuestion(0)'>
+        <p class="question">Q: What is a variable?</p>
+        <p class="answer">A: A variable is a way to hold a value you assign to it. This can be a simple text or number, but also a function or object.</p>
+    </div>
+    <div class="card" onmousemove='showAnswer(1)' onmouseout='showQuestion(1)'>
+        <p class="question">Q: What is the difference between let and const?</p>
+        <p class="answer">A: const is a constant variable, meaning you assign it once and you can't reassign it. let is a variable which can be reassisgned.</p>
+    </div>
+    <div class="card" onmousemove='showAnswer(2)' onmouseout='showQuestion(2)'>
+        <p class="question">Q: What is a method?</p>
+        <p class="answer">A: A method is an action that can be performed on objects. A method is a property containing a function. </p>
+    </div>
+    <div class="card" onmousemove='showAnswer(3)' onmouseout='showQuestion(3)'>
+        <p class="question">Q: What is a object?</p>
+        <p class="answer">A: An object is a variable containing multiple values written as name:value pairs which are called properties.</p>
+    </div>
+    <div class="card" onmousemove='showAnswer(4)' onmouseout='showQuestion(4)'>
+        <p class="question">Q: What is a function?</p>
+        <p class="answer">A: A function is a block of code designed to perform a specific task.This function is invoked when "something" invokes it. </p>
     </div>
 
 </body>

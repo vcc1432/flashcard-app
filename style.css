@@ -17,13 +17,13 @@ h2 {
 	text-align: center;
 	letter-spacing: 1px;
 }
-.card-1 {
+.card {
   background-color: white;
 	width: 50%;
 	height: 300px;
 	margin: auto;
 	position: relative;
-	/*display: none;*/
+	display: none;
 }
 
 .question, .answer {
